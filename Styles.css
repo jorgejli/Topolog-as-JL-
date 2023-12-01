@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  background: #212121;
+}
+
+
+/************* Home de viembenida *************/
+.welcome-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('img/fondo.png'); /* Ruta a tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Color del texto */
+}
+.welcome-screen h1 {
+  font-size: 5em; 
+}
+.tema {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-top: 20px;
+}
+.tema p {
+  font-size: 1.5em; /* Tamaño del texto del párrafo */
+  font-style: italic; /* Estilo del texto del párrafo */
+  text-align: center;
+}
+
+
+/************* barra de navegacion *************/
+nav {
+  display: flex;
+  justify-content: space-between; /* Alinea elementos a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  background: rgba(33, 33, 33, 0.9);
+  padding: 15px;
+  
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+.segunda-seccion-barra-de-navegacion .logo {
+  font-style: italic;
+  color: #fff;
+  font-size: 30px;
+  margin-right: 50px; /* Espacio entre el logo y los botones de navegación */
+}
+.segunda-seccion-barra-de-navegacion button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+.segunda-seccion-barra-de-navegacion button:hover {
+  letter-spacing: 0.25em;
+  background: #ff1867;
+  color: #ff1867;
+  -webkit-box-shadow: 0 0 45px #ff1867;
+  box-shadow: 0 0 45px #ff1867;
+}
+.segunda-seccion-barra-de-navegacion button::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #222222;
+}
+.segunda-seccion-barra-de-navegacion button span {
+  position: relative;
+  z-index: 1;
+}
+.segunda-seccion-barra-de-navegacion button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.segunda-seccion-barra-de-navegacion button i::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.segunda-seccion-barra-de-navegacion button:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+.segunda-seccion-barra-de-navegacion button i::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.segunda-seccion-barra-de-navegacion button:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+
+/************* Styles de Finalidad y los tipos de topologias *************/
+.tercera-seccion-funcion {
+  display: flex;
+  color: transparent;
+
+  justify-content: center;
+}
+.custom-container {
+  font-size: 18px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  margin: 20px;
+  max-width: 700px;
+}
+.custom-paragraph {
+  display: none;
+  color: black;
+}
+.custom-paragraph.showing {
+  display: block;
+}
+.custom-corner {
+  position: absolute;
+  font-size: 80px;
+  color: rgba(33, 33, 33, 0.2);
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, color 0.3s;
+}
+.custom-corner:hover {
+  color: rgba(33, 33, 33, 0.7);
+}
+.custom-corner:active {
+  color: rgba(33, 33, 33, 0.9);
+}
+.custom-corner.left {
+  left: 0;
+}
+.custom-corner.right {
+  right: 0;
+}
+.custom-corner a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: rgba(33, 33, 33, 0.5);
+}
+.tiposdetopologias {
+  display: flex;
+  justify-content: center;
+}
+.tiposdetopologias p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+.calticas360 {
+  display: flex;
+}
+.contenedor-tarjeta {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  transition: width 0.5s; /* Nueva línea para la transición de la anchura */
+  }
+.contenedor-tarjeta:hover {
+  width: 500px;
+}
+.contenedor-tarjeta:not(:hover) {
+  width: 300px;
+}
+.contenedor-tarjeta .parte {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+.contenedor-tarjeta .frontal {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+  background: rgba(65, 119, 180, 0.5); /* Color blanco con 0.5 de opacidad */
+  backdrop-filter: blur(50px); /* Ajusta el valor de desenfoque según sea necesario */
+}
+.contenedor-tarjeta .frontal img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedor-tarjeta .frontal h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+}
+.contenedor-tarjeta .tracera {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgba(40, 37, 37, 0.5); /* Color blanco con 0.5 de opacidad */
+  border-radius: 10px; /* Opcional: agrega esquinas redondeadas al fondo */
+  padding: 20px; /* Opcional: agrega relleno al contenido dentro del div */
+  backdrop-filter: blur(10px); /* Ajusta el valor de desenfoque según sea necesario */
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 5px 10px #000;
+}
+.contenedor-tarjeta .tracera .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+.contenedor-tarjeta .tracera .link a {
+  color: #f3f3f3;
+}
+.contenedor-tarjeta .tracera h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.contenedor-tarjeta .tracera p {
+  letter-spacing: 1px;
+}
+.contenedor-tarjeta:hover .frontal {
+  transform: perspective(600px) rotateY(180deg);
+}
+.contenedor-tarjeta:hover .tracera {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+/****************galeria****************/
+.clasdeevidencias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.clasdeevidencias p {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+.galeria-contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.galeria {
+  width: 50%;
+  height: 595px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.galeria img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.imagen-grande {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+.imagen-grande img {
+  display: flex;
+  max-width: 100%;	
+  max-height: 100vh; /* Ajusta el tamaño máximo de la imagen según la altura de la ventana */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/************* Styles del Formulario y los comentarios *************/
+.quinta-seccion-de-formulario-comentarios {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.titlecomenformu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 80px;
+}
+.titlecomenformu p {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+.formulario, .body-comentario {
+  width: 50%;
+}
+.formulario {
+  max-width: 500px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.formulario h2 {
+  text-align: center;
+}
+.formulario .campo {
+  margin-bottom: 10px;
+}
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+.formulario input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px; /* Ajuste para espaciado entre campos */
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.formulario .estrellas {
+  display: flex;
+}
+.formulario input[type="radio"] {
+  display: none;
+}
+.formulario label {
+  cursor: pointer;
+}
+.formulario button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.formulario button:hover {
+  background-color: #45a049;
+}
+.formulario .mensaje {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.formulario p.clasificacion {
+position: relative;
+overflow: hidden;
+display: inline-block;
+margin-top: -5px;
+}
+.formulario p.clasificacion input {
+position: absolute;
+top: -100px;
+}
+.formulario p.clasificacion label {
+float: right;
+color: #333; /* Color inicial */
+font-size: 54px; /* Tamaño de las estrellas */
+transition: color 0.3s; /* Transición suave de color */
+}
+.formulario p.clasificacion label:hover,
+p.clasificacion label:hover ~ label,
+p.clasificacion input:checked ~ label {
+color: #FFFF33; /* Cambio de color al pasar el ratón o al estar seleccionado (amarillo neón) */
+}
+.body-comentario {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.contenedor-comentarios {
+  display: flex;
+  max-height: 300px;  
+  max-width: 800px; /* Tamaño fijo del contenedor */
+  overflow-y: auto; /* Añade desplazamiento vertical si es necesario */
+  border: 3px solid #ddd; /* Borde para claridad */
+  border-radius: 5px;
+  scrollbar-width: thin;  /* Para navegadores que admiten la propiedad scrollbar-width (Firefox) */
+}
+.contenedor-comentarios::-webkit-scrollbar {
+  width: thin;
+  display: none;  /* Oculta la barra en navegadores webkit como Chrome y Safari */
+}
+.caja-comentarios {
+  width: 100%;
+}
+.comentario {
+  /* Estilos del comentario */
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+.comentario img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.info-comentario {
+  flex-grow: 1;
+}
+.calificacion {
+  color: #f39c12;
+  font-size: 20px;
+}
+.fecha {
+  color: #95a5a6;
+  margin-top: 5px;
+}
+.texto-comentario {
+  margin-top: 10px;
+}

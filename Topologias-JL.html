@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="contactos.css">
+    <title>Topologias-JL</title>
+</head>
+<body>
+	<!--Primera seccion " home de vienvenida "-->
+    <section class="primera-seccion-viembenida" id="inicio">
+      <div class="welcome-screen">
+        <!-- primera seccion "Contenido de la pantalla de bienvenida" -->
+        <h1>Topologías-JL</h1>
+		<div class="tema">
+        <p>Desarrollo e implementación de un sistema que permite la creación de nuevas topologías de red para la correcta administración del internet y promoción de la misma a través de un portal web.</p>
+	    </div>
+	  </div>
+    </section>
+
+    <!--Segunda seccion "barra de navegacion"-->
+    <section class="segunda-seccion-barra-de-navegacion">
+      <nav class="dixed-nav">
+        <p class="logo">Topologías -JL</p>
+        <a href="#inicio" class="nav-link"><button><span>Inicio</span><i></i></button></a>
+        <a href="#finalidad" class="nav-link"><button><span>Finalidad</span><i></i></button></a>
+        <a href="#evidencia" class="nav-link"><button><span>Evidencia</span><i></i></button></a>
+        <a href="#comentarios" class="nav-link"><button><span>Comentarios</span><i></i></button></a>
+        <a href="#contactos" class="nav-link"><button><span>Contactos</span><i></i></button></a>
+      </nav>
+    </section>
+
+    <!--Tercera seccion " Funciones "-->
+    <section class="tercera-seccion-funcion" id="finalidad">
+      <div class="custom-container">
+        <p style="color: white; text-align: center; font-size: 50px; font-weight: 700;">Finalidad</p>
+        <p class="custom-paragraph showing">La finalidad principal de mi proyecto es el desarrollo de un sistema innovador que permita la creación de nuevas topologías de redes con el propósito de administrar de manera eficiente el acceso a Internet. Este sistema se concibe como una herramienta integral para la gestión de redes, brindando flexibilidad y personalización en la configuración de topologías según las necesidades específicas de los usuarios.</p>
+        <p class="custom-paragraph">Además de optimizar la administración de la red, mi objetivo es promover activamente servicios y contenido a través de un portal web integrado. La finalidad última es mejorar la experiencia de los usuarios al proporcionarles un acceso más rápido, confiable y personalizado a Internet, al mismo tiempo que se facilita la promoción de servicios y productos a través de un portal web intuitivo y atractivo.</p>
+        <p class="custom-paragraph">Este sistema tiene como meta impulsar la conectividad de manera efectiva, contribuyendo así al desarrollo de entornos digitales más dinámicos y adaptados a las necesidades cambiantes de los usuarios. En resumen, la finalidad es crear una solución integral que no solo optimice la administración de redes, sino que también promueva activamente contenido a través de un portal web, mejorando significativamente la experiencia de los usuarios en el mundo digital.</p>
+      
+        <div class="custom-corner left" onmouseover="showSign(this)" onmouseout="hideSign(this)" onclick="changeParagraph(-1, event)"><a href="javascript:void(0);">&lt;</a></div>
+        <div class="custom-corner right" onmouseover="showSign(this)" onmouseout="hideSign(this)" onclick="changeParagraph(1, event)"><a href="javascript:void(0);">&gt;</a></div>
+      </div>
+    </section>
+    <div class="tiposdetopologias">
+      <p>Tipos de Topologías</p>
+    </div>
+    <div class="calticas360">
+      <div class="contenedor-tarjeta">
+				<div class="parte frontal">
+					<img src="img/To-Bus.png" alt="Estrella" />
+					<h3>Bus</h3>
+				</div>
+				<div class="parte tracera">
+					<h3>Bus</h3>
+					<p>Todos los dispositivos comparten un canal central. Simple pero propenso a colisiones.</p>
+					<div class="link">
+						<a href="#">Más información</a>
+					</div>
+				</div>
+			</div>
+      <div class="contenedor-tarjeta">
+				<div class="parte frontal">
+					<img src="img/To-anillo.png" alt="Estrella" />
+					<h3>Anillo</h3>
+				</div>
+				<div class="parte tracera">
+					<h3>Anillo</h3>
+					<p>Los dispositivos forman un círculo cerrado. Menos colisiones, pero la caída de un nodo afecta toda la red.</p>
+          <div class="link">
+						<a href="#">Más información</a>
+					</div>
+				</div>
+			</div>
+			<div class="contenedor-tarjeta">
+				<div class="parte frontal">
+					<img src="img/To-Arbol.png" alt="Estrella" />
+					<h3>Arbol</h3>
+				</div>
+				<div class="parte tracera">
+					<h3>Arbol</h3>
+					<p>Estructura jerárquica con un nodo central. Escalable, pero la caída del nodo central afecta toda la red.</p>
+					<div class="link">
+						<a href="#">Más información</a>
+					</div>
+				</div>
+			</div>
+			<div class="contenedor-tarjeta">
+				<div class="parte frontal">
+					<img src="img/To-Estrella.png" alt="Estrella" />
+					<h3>Estrella</h3>
+				</div>
+				<div class="parte tracera">
+					<h3>Estrella</h3>
+					<p>Todos los dispositivos conectados a un punto central. Fácil de gestionar, pero la falla del centro afecta toda la red.</p>
+					<div class="link">
+						<a href="#">Más información</a>
+					</div>
+				</div>
+			</div>
+			<div class="contenedor-tarjeta">
+				<div class="parte frontal">
+					<img src="img/To-malla.png" alt="Estrella" />
+					<h3>Malla</h3>
+				</div>
+				<div class="parte tracera">
+					<h3>Malla</h3>
+					<p>Combinación de topologías o conexión directa o indirecta de todos los nodos. Ventajas combinadas pero con mayor complejidad.</p>
+					<div class="link">
+						<a href="#">Más información</a>
+					</div>
+				</div>
+			</div>
+			<div class="contenedor-tarjeta">
+				<div class="parte frontal">
+					<img src="img/To-mixta.png" alt="Estrella" />
+					<h3>Mixta</h3>
+				</div>
+				<div class="parte tracera">
+					<h3>Mixta</h3>
+					<p>Combina ventajas de varias topologías. Puede ser más eficiente pero con mayor complejidad.</p>
+					<div class="link">
+						<a href="#">Más información</a>
+					</div>
+				</div>
+			</div>
+			<div class="contenedor-tarjeta">
+				<div class="parte frontal">
+					<img src="img/To-totalmente conexa.png" alt="Estrella" />
+					<h3>Conexa</h3>
+				</div>
+				<div class="parte tracera">
+					<h3>Conexa</h3>
+					<p>Todos los nodos están conectados directa o indirectamente. Mejora la comunicación pero puede ser más compleja de gestionar.</p>
+					<div class="link">
+						<a href="#">Más información</a>
+					</div>
+				</div>
+			</div>
+    </div>
+
+	<!--Cuarta seccion " Evidencias fotograficas "-->
+    <section class="cuarta-seccion-anexo" id="evidencia">
+      <div class="clasdeevidencias">
+        <p>Anexos</p>
+      </div>
+      <div class="galeria-contenedor">
+        <div class="galeria">
+          
+          <div ><img src="img/01.png" onclick="mostrarImagen('img/01.png')" alt="Imagen "></div>
+          <div ><img src="img/02.png" onclick="mostrarImagen('img/02.png')" alt="Imagen "></div>
+          <div ><img src="img/03.png" onclick="mostrarImagen('img/03.png')" alt="Imagen "></div>
+          <div ><img src="img/04.png" onclick="mostrarImagen('img/04.png')" alt="Imagen "></div>
+          <div ><img src="img/05.png" onclick="mostrarImagen('img/05.png')" alt="Imagen "></div>
+          <div ><img src="img/06.png" onclick="mostrarImagen('img/06.png')" alt="Imagen "></div>
+          <div ><img src="img/07.png" onclick="mostrarImagen('img/07.png')" alt="Imagen "></div>
+          <div ><img src="img/08.png" onclick="mostrarImagen('img/08.png')" alt="Imagen "></div>
+          <div ><img src="img/09.png" onclick="mostrarImagen('img/09.png')" alt="Imagen "></div>
+          <div ><img src="img/10.png" onclick="mostrarImagen('img/10.png')" alt="Imagen "></div>
+          <div ><img src="img/11.jpg" onclick="mostrarImagen('img/11.jpg')" alt="Imagen "></div>
+          <div ><img src="img/12.jpg" onclick="mostrarImagen('img/12.jpg')" alt="Imagen "></div>
+		  <div ><img src="img/11.png" onclick="mostrarImagen('img/11.png')" alt="Imagen "></div>
+		  <div ><img src="img/12.png" onclick="mostrarImagen('img/12.png')" alt="Imagen "></div>
+		  <div ><img src="img/13.jpg" onclick="mostrarImagen('img/13.jpg')" alt="Imagen "></div>
+		  <div ><img src="img/13.png" onclick="mostrarImagen('img/13.png')" alt="Imagen "></div>
+        </div>
+        
+        <div class="imagen-grande" id="imagenGrande">
+          <img src="img/01.png">
+          <img src="img/02.png">
+          <img src="img/03.png">
+          <img src="img/04.png">
+          <img src="img/05.png">
+          <img src="img/06.png">
+          <img src="img/07.png">
+          <img src="img/08.png">
+          <img src="img/09.png">
+          <img src="img/10.png">
+          <img src="img/11.jpg">
+          <img src="img/12.jpg">
+		  <img src="img/11.png">
+          <img src="img/12.png">
+          <img src="img/13.jpg">
+          <img src="img/13.png">
+        </div>
+      </div>
+    </section>
+
+	<!--Quinta seccion " Formulario y Comentarios "-->
+    <div class="titlecomenformu" id="comentarios">
+		<p>Comentarios</p>
+	</div>
+	<section class="quinta-seccion-de-formulario-comentarios">
+	<div class="formulario">
+		<h2>Deja tu Reseña</h2>
+		<form action="" method="post">
+			<div class="campo">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+			</div>
+			<div class="campo">
+				<label for="apellido">Apellido:</label>
+				<input type="text" id="apellido" name="apellido" required>
+			</div>
+			<p class="clasificacion">
+				<input id="radio1" type="radio" name="estrellas" value="5">
+				<label for="radio1">★</label>
+				<input id="radio2" type="radio" name="estrellas" value="4">
+				<label for="radio2">★</label>
+				<input id="radio3" type="radio" name="estrellas" value="3">
+				<label for="radio3">★</label>
+				<input id="radio4" type="radio" name="estrellas" value="2">
+				<label for="radio4">★</label>
+				<input id="radio5" type="radio" name="estrellas" value="1">
+				<label for="radio5">★</label>
+			</p>
+			<div class="campo">
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+			</div>
+				<button type="submit">Enviar Reseña</button>
+		</form>
+	</div>
+	
+	<div class="body-comentario">
+		<div class="contenedor-comentarios">
+			<div class="caja-comentarios">
+			    <!-- Comentario 1 -->
+				<div class="comentario">
+					<img src="img/profesor Cristian.jpg" alt="Imagen de Perfil">
+					<div class="info-comentario">
+						<h3 class="usuario">Cristian Rocafuerte</h3>
+						<div class="calificacion">
+							★★★★★ <!-- 4 estrellas de 5 -->
+						</div>
+						<p class="fecha">12 de noviembre de 2023</p>
+						<p class="texto-comentario">Increíble experiencia con el sistema de administración de redes! La interfaz es súper intuitiva y las opciones para personalizar las topologías son asombrosas. ¡Gracias por simplificar la gestión de redes y hacerla accesible para todos!</p>
+					</div>
+				</div>
+				
+				<div class="comentario">
+					<img src="img/profesor Adrian.jpg" alt="Imagen de Perfil">
+				    <div class="info-comentario">
+						<h3 class="usuario">Adrian Rocafuerte</h3>
+						<div class="calificacion">
+							★★★★☆ <!-- 4 estrellas de 5 -->
+						</div>
+				    	<p class="fecha">12 de noviembre de 2023</p>
+				    	<p class="texto-comentario">Como entusiasta de la tecnología, este sistema es simplemente brillante. Las nuevas topologías son fáciles de crear, y la integración con el portal web para promoción es genial. Un paso audaz hacia el futuro de la administración de redes.</p>
+					</div>
+				</div>
+				
+				<div class="comentario">
+					<img src="img/profesora Elsa.jpg" alt="Imagen de Perfil">
+					<div class="info-comentario">
+					    <h3 class="usuario">Elsa Deusa</h3>
+					    <div class="calificacion">
+						  ★★★★☆ <!-- 4 estrellas de 5 -->
+						</div>
+						<p class="fecha">12 de noviembre de 2023</p>
+						<p class="texto-comentario">Como profesor de informática, este sistema ha facilitado la enseñanza de conceptos de redes. La posibilidad de crear topologías personalizadas es invaluable para ilustrar los principios. ¡Una herramienta educativa poderosa</p>
+					</div>
+				</div>
+				
+				<div class="comentario">
+					<img src="img/compañero Loor.jpg" alt="Imagen de Perfil">
+					<div class="info-comentario">
+						<h3 class="usuario">Loor Elian</h3>
+						<div class="calificacion">
+							★★★★★ <!-- 4 estrellas de 5 -->
+						</div>
+						<p class="fecha">12 de noviembre de 2023</p>
+						<p class="texto-comentario">Este sistema ha sido clave para el éxito de nuestra startup. La facilidad para crear y modificar topologías ha ahorrado tiempo y recursos. La integración del portal web para promoción es una estrategia brillante. ¡Un socio tecnológico esencial para cualquier emprendedo</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<section class="sexta-seccion-contactos" id="contactos">
+	<div class="titlecontac">
+		<p>Contactos</p>
+	</div>
+	<footer>
+		<div class="GutHub">
+			<a href="https://www.GutHub.com/" target="_blank" rel="noopener noreferrer">
+			<div class="light-button">
+			  <button class="bt">
+				<div class="light-holder">
+				  <div class="dot"></div>
+				  <div class="light"></div>
+				</div>
+				<div class="button-holder">
+					<svg 
+						xmlns="http://www.w3.org/2000/svg" 
+						width="36" 
+						height="36" 
+						viewBox="0 0 24 24">
+						<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+					</svg>
+				  <p>GitHub</p>
+				</div>
+			  </button>
+			</div>
+			</a>
+		</div>
+		
+		<div class="Facebook">
+			<a href="https://www.facebook.com/profile.php?id=100040496829931&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+			  <div class="light-button">
+				<button class="bt">
+				  <div class="light-holder">
+					<div class="dot"></div>
+					<div class="light"></div>
+				  </div>
+				  <div class="button-holder">
+					<svg
+					  xmlns="http://www.w3.org/2000/svg"
+					  width="36"
+					  height="36"
+					  fill="currentColor"
+					  class="bi bi-facebook"
+					  viewBox="0 0 16 16"
+					>
+					  <path
+						d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+					  ></path>
+					</svg>
+					<p>Facebook</p>
+				  </div>
+				</button>
+			  </div>
+			</a>
+		</div>
+		
+		<div class="youtube">
+		<a href="https://youtube.com/@El-Jorge?si=FaLeP01NPM7ZRlC_" target="_blank" rel="noopener noreferrer">
+		  <div class="light-button">
+			<button class="bt">
+			  <div class="light-holder">
+				<div class="dot"></div>
+				<div class="light"></div>
+			  </div>
+			  <div class="button-holder">
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="100"
+				  height="100"
+				  viewBox="0 0 50 50"
+				>
+				  <path
+					d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"
+				  ></path>
+				</svg>
+				<p>YouTube</p>
+			  </div>
+			</button>
+		  </div>
+		</a>
+		</div>
+		
+		<div class="tiktok">
+		  <a href="https://www.tiktok.com/@...jorge__?_t=8hhB8BQ3u21&_r=1" target="_blank" rel="noopener noreferrer">
+		  <div class="light-button">
+			<button class="bt tiktok">
+			  <div class="light-holder">
+				<div class="dot"></div>
+				<div class="light"></div>
+			  </div>
+			  <div class="button-holder">
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="100"
+				  height="100"
+				  viewBox="0 0 50 50"
+				>
+				  <path
+					d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+				  ></path>
+				</svg>
+				<p>TikTok</p>
+			  </div>
+			</button>
+		  </div>
+		</a>
+		</div>
+		
+		<div class="WhatsApp">
+		  <a href="whatsapp://send?phone=593985341809" class="bt">
+		<div class="light-button">
+	  <button class="bt whatsApp">
+		<div class="light-holder">
+		  <div class="dot"></div>
+		  <div class="light"></div>
+		</div>
+		<div class="button-holder">
+		  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+			<path d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z"></path>
+		  </svg>
+		  <p>whatsapp</p>
+		</div>
+	  </button>
+	</div>
+		  </a>
+		</div>
+	  </footer>
+	</section>
+	<script src="js/script.js"></script>
+	<script src="js/barranav.js"></script>
+	<script src="js/galeriacss.js"></script>
+	<script src="js/desplazamiento.js"></script>
+	<script src="js/cambios.js"></script>
+</body>
+</html>

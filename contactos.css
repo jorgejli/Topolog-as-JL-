@@ -1,0 +1,396 @@
+*{
+    text-decoration: none;
+  }
+  body {
+    background: #212121;
+  }
+  .titlecontac {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .titlecontac p {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+  }
+  footer{
+    display: flex;
+    height: 250px;
+    margin-top: 40px;
+    background: rgba(33, 33, 33, 0.8);
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .GutHub, .Facebook, .tiktok, .WhatsApp, .youtube {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  /************* GutHub *************/
+  .GutHub .light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+  }
+  .GutHub .light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(33, 33, 33, 0.8);
+    border-radius: 5px;
+    color: rgba(33, 33, 33, 0.8);
+    font-weight: 700;
+    transition: 300ms;
+    outline: rgba(33, 33, 33, 0.8) 2px solid;
+    outline-offset: 20;
+  }
+  .GutHub .light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: rgba(33, 33, 33, 0.8);
+    transition: 300ms;
+  }
+  .GutHub .light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .GutHub .light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  .GutHub .light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  .GutHub .light-button button.bt:hover .button-holder svg {
+    fill: rgba(88, 101, 242, 1);
+  }
+  .GutHub .light-button button.bt:hover .button-holder {
+    color: rgba(88, 101, 242, 1);
+    outline: rgba(88, 101, 242, 1) 2px solid;
+    outline-offset: 2px;
+    background: #0f0f0f;
+  }
+  .GutHub .light-button button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  }
+
+
+  /************** Facebook **************/
+  .Facebook .light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+  }
+  .Facebook .light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(33, 33, 33, 0.8);
+    border-radius: 5px;
+    color: rgba(33, 33, 33, 0.8);
+    font-weight: 700;
+    transition: 300ms;
+    outline: rgba(33, 33, 33, 0.8) 2px solid;
+    outline-offset: 20;
+  } 
+  .Facebook .light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: rgba(33, 33, 33, 0.8);
+    transition: 300ms;
+  }
+  .Facebook .light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Facebook .light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  } 
+  .Facebook .light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  .Facebook .light-button button.bt:hover .button-holder svg {
+    fill: rgba(88, 101, 242, 1);
+  }
+  .Facebook .light-button button.bt:hover .button-holder {
+    color: rgba(88, 101, 242, 1);
+    outline: rgba(88, 101, 242, 1) 2px solid;
+    outline-offset: 2px;
+    background: #0f0f0f;
+  }
+  .Facebook .light-button button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  }
+
+
+  /************** Youtube **************/
+  .youtube .light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+  }
+  .youtube .light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(33, 33, 33, 0.8);
+    border-radius: 5px;
+    color: rgba(33, 33, 33, 0.8);
+    font-weight: 700;
+    transition: 300ms;
+    outline: rgba(33, 33, 33, 0.8) 2px solid;
+    outline-offset: 20;
+  }
+  .youtube .light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: rgba(33, 33, 33, 0.8);
+    transition: 300ms;
+  }
+  .youtube .light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .youtube .light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  .youtube .light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  .youtube .light-button button.bt:hover .button-holder svg {
+    fill: rgba(233, 57, 26);
+  }
+  .youtube .light-button button.bt:hover .button-holder {
+    color: rgba(233, 57, 26);
+    outline: rgba(233, 57, 26) 2px solid;
+    outline-offset: 2px;
+    background: #0f0f0f;
+  }
+  .youtube .light-button button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgb(233, 57, 26) 0%,
+      rgba(200, 20, 100, 0) 75%,
+      rgba(200, 20, 100, 0) 100%
+    );
+  }
+
+
+  /************** TikTok **************/
+  .tiktok .light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+  }
+  .tiktok .light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(33, 33, 33, 0.8);
+    border-radius: 5px;
+    color: rgba(33, 33, 33, 0.8);
+    font-weight: 700;
+    transition: 300ms;
+    outline: rgba(33, 33, 33, 0.8) 2px solid;
+    outline-offset: 20;
+  }
+  .tiktok .light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: rgba(33, 33, 33, 0.8);
+    transition: 300ms;
+  }
+  .tiktok .light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tiktok .light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  .tiktok .light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  .tiktok .light-button button.bt:hover .button-holder svg {
+    fill: rgba(220, 0, 100);
+  }
+  .tiktok .light-button button.bt:hover .button-holder {
+    color: rgba(220, 0, 100);
+    outline: rgba(220, 0, 100) 2px solid;
+    outline-offset: 2px;
+    background: #0f0f0f;
+  }
+  .tiktok .light-button button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgb(220, 0, 100) 0%,
+      rgba(220, 0, 100, 0) 75%,
+      rgba(220, 0, 100, 0) 100%
+    );
+  }
+
+
+  /************** WhatsApp **************/
+  .WhatsApp .light-button button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+  }
+  .WhatsApp .light-button button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(33, 33, 33, 0.8);
+    border-radius: 5px;
+    color: rgba(33, 33, 33, 0.8);
+    font-weight: 700;
+    transition: 300ms;
+    outline: rgba(33, 33, 33, 0.8) 2px solid;
+    outline-offset: 20;
+  }
+  .WhatsApp .light-button button.bt .button-holder svg {
+    height: 50px;
+    fill: rgba(33, 33, 33, 0.8);
+    transition: 300ms;
+  }
+  .WhatsApp .light-button button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .WhatsApp .light-button button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  .WhatsApp .light-button button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  .WhatsApp .light-button button.bt:hover .button-holder svg {
+    fill: #25d366; /* Verde WhatsApp */
+  }
+  .WhatsApp .light-button button.bt:hover .button-holder {
+    color: #25d366; /* Verde WhatsApp */
+    outline: #25d366 2px solid; /* Verde WhatsApp */
+    outline-offset: 2px;
+    background: #0f0f0f;
+  }
+  .WhatsApp .light-button button.bt:hover .light-holder .light {
+    background: #25d366; /* Verde WhatsApp */
+    background: linear-gradient(
+      180deg,
+      #25d366 0%,
+      rgba(37, 211, 102, 0) 75%, /* Verde WhatsApp */
+      rgba(37, 211, 102, 0) 100% /* Verde WhatsApp */
+    );
+  }
